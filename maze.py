@@ -193,7 +193,7 @@ if __name__ == "__main__":
         sys.exit("Usage: python maze.py maze.txt")
 
     m = Maze(sys.argv[1])
-    m.output_image('newinitial.png')
+    m.output_image('initial.png')
     print("Maze:")
     m.print()
     print("Solving...")
@@ -201,4 +201,4 @@ if __name__ == "__main__":
     print("States Explored:", m.num_explored)
     print("Solution:")
     m.print()
-    m.output_image("newmaze.png", show_explored=False)
+    m.output_image("maze.png", show_explored=False)
